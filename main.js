@@ -48,5 +48,18 @@ window.addEventListener("load", () => {
     boxTaskElement.appendChild(taskActionElement);
 
     boxListElement.appendChild(boxTaskElement);
+
+    boxInput.value = "";
+
+    taskEditElement.addEventListener("click", () => {
+      if (taskEditElement.innerHTML.toLowerCase() == "edit") {
+        taskInputElement.removeAttribute("readonly");
+        taskInputElement.focus();
+        taskEditElement.innerHTML = "Save";
+      } else {
+        taskInputElement.setAttribute("readonly", "readonly");
+        taskEditElement.innerHTML = "edit";
+      }
+    });
   });
 });
