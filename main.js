@@ -22,5 +22,31 @@ window.addEventListener("load", () => {
     boxTaskElement.appendChild(boxTaskContentElement);
 
     boxListElement.appendChild(boxTaskElement);
+
+    const taskInputElement = document.createElement("input");
+    taskInputElement.classList.add("text");
+    taskInputElement.type = "text";
+    taskInputElement.value = task;
+    taskInputElement.setAttribute("readonly", "readonly");
+
+    boxTaskContentElement.appendChild(taskInputElement);
+
+    const taskActionElement = document.createElement("div");
+    taskActionElement.classList.add("actions");
+
+    const taskEditElement = document.createElement("button");
+    taskEditElement.classList.add("edit");
+    taskEditElement.innerHTML = "edit";
+
+    const taskDeleteElement = document.createElement("button");
+    taskDeleteElement.classList.add("delete");
+    taskDeleteElement.innerHTML = "done";
+
+    taskActionElement.appendChild(taskEditElement);
+    taskActionElement.appendChild(taskDeleteElement);
+
+    boxTaskElement.appendChild(taskActionElement);
+
+    boxListElement.appendChild(boxTaskElement);
   });
 });

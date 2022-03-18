@@ -1,11 +1,10 @@
 :root {
-  --dark: #374151;
-  --darker: #1f2937;
+  --dark: #000957;
+  --darker: #344cb7;
   --darkest: #111827;
   --gray: #6b7280;
   --light: #eee;
-  --pink: #ec4899;
-  --purple: #8b5cf6;
+  --yellow: #ebe645;
 }
 
 * {
@@ -64,10 +63,10 @@ button {
 }
 
 #newTaskSubmit {
-  color: var(--pink);
+  color: var(--yellow);
   font-size: 1.2rem;
   font-weight: 700;
-  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  background-image: linear-gradient(to right, var(--yellow), var(--darker));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
@@ -122,7 +121,7 @@ main {
 }
 
 #tasks .task .content .text:not(:read-only) {
-  color: var(--pink);
+  color: var(--yellow);
 }
 
 #tasks .task .actions {
@@ -147,11 +146,13 @@ main {
 }
 
 .task .actions .edit {
-  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  background-image: linear-gradient(to right, var(--yellow), var(--darker));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
-  color: crimson;
+  background-image: linear-gradient(to right, var(--yellow), var(--darker));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
