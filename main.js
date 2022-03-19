@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
     const task = boxInput.value;
 
     if (!task) {
-      alert("Proszę, wpisz swoje zadanie");
+      alert("Please enter the task");
       return;
     }
 
@@ -60,6 +60,10 @@ window.addEventListener("load", () => {
         taskInputElement.setAttribute("readonly", "readonly");
         taskEditElement.innerHTML = "edit";
       }
+    });
+
+    taskDeleteElement.addEventListener("click", () => {
+      boxListElement.removeChild(boxTaskElement);
     });
   });
 });
