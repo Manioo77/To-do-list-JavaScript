@@ -5,3 +5,32 @@
 </table>
 
 # TODO LIST
+
+![Zrzut ekranu aplikacji](img1.png)
+
+1. First item
+2. Second item
+3. Third item
+   - Indented item
+   - Indented item
+4. Fourth item
+
+`` Use `code` in your Markdown file. ``
+
+Nazwa klasy `Class` <- to nazwa klasy :punch:
+
+```
+<header>
+      <div class="container">
+        <form id="newTaskForm">
+          <input
+            type="text"
+            placeholder="What do you have to do?"
+            id="newTaskInput"
+          />
+          <input type="submit" id="newTaskSubmit" value="Add task" />
+        </form>
+      </div>
+</header>
+
+```
