@@ -7,4 +7,3 @@
 # TODO LIST
 
 ![Zrzut ekranu aplikacji](img1.png)
-213213213
