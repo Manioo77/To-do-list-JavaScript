@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: url(/img1.png);
+  background: url(images/img1.png);
 }
 
 header {
